@@ -8,21 +8,21 @@ const eraser = document.querySelector('.Eraser');
 const colors = document.querySelector('.Color');
 const divContainerId = document.querySelector('#divContainerId');
 
-function mouseEnter(smallDiv) {
-    smallDiv.style.backgroundColor = 'black';        
-};
-
-function mouseLeave(smallDiv) {
-    smallDiv.style.backgroundColor = ' ';
-};
-    
-    
+ 
 for (let i = 0; i < 500; i++) {
     const smallDiv = document.createElement('div');
     smallDiv.setAttribute('class', 'small-div');
     divContainer.appendChild(smallDiv);
+
+    function mouseEnter(smallDiv) {
+    smallDiv.style.backgroundColor = 'black';        
+};
+
+   function mouseLeave(smallDiv) {
+    smallDiv.style.backgroundColor = ' ';
+};
     // console.log(i)
-    smallDiv.addEventListener('mouseenter', () => mouseEnter(smallDiv));
+    smallDiv.addEventListener('mouseenter', () => mouseEnter (smallDiv));
     smallDiv.addEventListener('mouseleave', () => mouseLeave(smallDiv));  
 }
 

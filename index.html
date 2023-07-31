@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="content">
         <div class="button-container">
             <button class="click-me">Click Me</button>
-            <button class="Color">Colors</button>
             <button class="Eraser">Eraser</button>
+            <div class="color-picker-container">Colors
+                <input type="color" name="color-picker" id="color-picker-id">
+            </div>
         </div>
         <div class="div-container" id="divContainerId"></div>
     </div>
-    <div class="modal-overlay"> 
+    <div class="modal-overlay">
         <div class="modal-content">
             <p class="modal-paragraph">Choose New Squares</p>
             <input type="text" id="input-squares" required placeholder="Choose Between 17-64">
@@ -24,4 +28,5 @@
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
